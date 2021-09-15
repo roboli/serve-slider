@@ -1,0 +1,29 @@
+{
+  "name": "serve-slider",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r esm src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roboli/serve-slider.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roboli/serve-slider/issues"
+  },
+  "engines": {
+    "node": "~16.5.0",
+    "npm": "~7.19.0"
+  },
+  "homepage": "https://github.com/roboli/serve-slider#readme",
+  "dependencies": {
+    "ejs": "3.1.6",
+    "esm": "3.2.25",
+    "express": "4.17.1"
+  }
+}

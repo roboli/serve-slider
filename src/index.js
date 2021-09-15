@@ -1,10 +1,11 @@
+import config from 'config';
 import express from 'express';
 import path from 'path';
 import fs from 'fs';
 
 const server = express();
-const port   = 3040;
-const directoryPath = path.join(process.env.PICTURES_DIR);
+const port   = config.port;
+const directoryPath = config.picturesDir;
 
 server.set('view engine', 'ejs');
 server.set('views', path.join(__dirname, '/views'));

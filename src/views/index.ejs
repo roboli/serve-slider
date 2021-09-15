@@ -2,5 +2,8 @@
   <head></head>
   <body>
     <h1>Hello World!</h1>
+    <% pictures.forEach(function(pic){ %>
+      <img src="<%= pic %>">
+    <% }); %>
   </body>
 </html>

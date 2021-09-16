@@ -2,6 +2,7 @@ import config from 'config';
 import express from 'express';
 import path from 'path';
 import fs from 'fs';
+import _ from 'lodash';
 
 const server = express();
 const port   = config.port;
@@ -26,6 +27,10 @@ server.get('/', (req, res) => {
         pictures.push(file);
       }
     });
+
+    if(config.shufflePictures) {
+      pictures = _.shuffle(pictures);
+    }
 
     res.render('index', { pictures });
   });

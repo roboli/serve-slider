@@ -9,3 +9,5 @@ if(env !== 'production') {
 export const port = process.env.PORT || 3040;
 
 export const picturesDir = process.env.PICTURES_DIR || __dirname;
+
+export const shufflePictures = process.env.SHUFFLE_PICTURES === 'true';
